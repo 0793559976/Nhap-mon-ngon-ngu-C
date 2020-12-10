@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-	// khai bao bien don gia,so luong
+	// khai bao bien don gia,so luong,thanh tien
 	int dongia,soluong,thanhtien;
 	printf ("dongia =");
 	scanf("%d",& dongia) ;
