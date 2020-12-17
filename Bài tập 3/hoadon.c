@@ -1,21 +1,26 @@
 #include <stdio.h>
 
 int main(){
-	// khai bao bien don gia,so luong
-	int dongia,soluong,thanhtien;
+	// khai bao bien don gia,so luong,thanhtien
+	float dongia,soluong,thanhtien;
+  // xuat ra man hinh dongia
 	printf ("dongia =");
-	scanf("%d",& dongia) ;
+  // nhap don gia
+	scanf("%f",& dongia) ;
 	printf ("soluong =");
-	scanf("%d",& soluong);
+  // xuat ra man hinh so luong
+	scanf("%f",& soluong);
+  // nhap so luong 
 	thanhtien = soluong*dongia;
 	// dieu kien 
-	if (soluong >= 5){ thanhtien= (soluong*dongia)*0.75;
-		printf ("%d",thanhtien );
+	if (soluong >= 5 & dongia >= 500){thanhtien =(soluong*dongia)*0.5;
+  // xuat ra man hinh 
+		printf ("%.f",thanhtien );
 		
 	
 		
 	}else {
-		printf (" %d",thanhtien);
+		printf (" %.f",thanhtien);
 	
 	}
 
