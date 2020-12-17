@@ -9,7 +9,7 @@ int main(){
 	scanf("%d",&soluong); 
 	thanhtien = soluong*dongia;
 	// dieu kien 
-	if (soluong >= 5 & dongia >= 500){thanhtien =(soluong*dongia)*0.5;
+	if (soluong >= 5 & dongia >= 500){thanhtien =(thanhtien)*0.5;
 		printf ("%.f",thanhtien );
 	}else {
 		printf (" %.f",thanhtien);
