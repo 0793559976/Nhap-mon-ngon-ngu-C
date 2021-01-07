@@ -2,7 +2,7 @@
 
 int main(){
 	int n;
-	printf("Nhap n: ");scanf("%d",&n);
+	scanf("%d",&n);
 	switch (n){
 		case 1:
 			printf("one");
@@ -23,7 +23,7 @@ int main(){
 			printf("six");
 			break;
 		case 7:
-			printf("sevent");
+			printf("seven");
 			break;
 		case 8:
 			printf("eight");
