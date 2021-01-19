@@ -12,15 +12,16 @@ int main() {
   	printf("Phan tu o mang a : ");
     scanf("%d", &a[i]);
   }
-  // Xuat ra man hinh cac phan tu cua mang a
+  // xuat ra man hinh cac phan tu cua mang a
   printf("Cac phan tu o mang a : ");
   for(i = 0;i < n;i++){
   	printf(" %d",a[i]);
   }
-  // Xuat ra man hinh cac so chan tu mang a
+  // xuat ra man hinh cac so chan tu mang a
+  printf("\nCac so chan tu mang a : ");
   for(i = 0;i < n; i++){
     if(a[i] %2 == 0){
-    printf("\nCac so chan tu mang a  %d",a[i]);
+    printf(" %d ",a[i]);
   }
   }
   return 0;
