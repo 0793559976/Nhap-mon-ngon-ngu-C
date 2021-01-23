@@ -1,7 +1,8 @@
 #include<stdio.h>
- // khai bao bien a,b,c,SoLonNhat
+ // khoi khai bao
 int a,b,c;
 int SoLonNhat();
+// khoi ham main
 int main(){
   printf("Nhap so a = ");
   scanf("%d",&a);//nhap a tu ban phim
@@ -15,14 +16,16 @@ int main(){
 
   return 0;
 }
+// khoi dinh nghia ham
 int SoLonNhat(){
-  // Xuat ra man hinh so lon nhat
-  if(a>b &&a>c)
-   printf("So a lon nhat : %d",a);
-  if (b>a&& b>c)
+  // Dieu kien
+  if(a>b &&a>c){
+   printf("So a lon nhat : %d",a);// Xuat ra man hinh so lon nhat
+  }else if (b>a&& b>c){
     printf("So b lon nhat : %d",b);
 
-  if (c>a&&c>b)
+  }else {
    printf("So c lon nhat : %d",c);
+  }
  return 0;
 }
