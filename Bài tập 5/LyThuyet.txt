@@ -1,0 +1,95 @@
+CÂU A:  Trình bày bộ chữ viết trong ngôn ngữ C.
+
+    Bộ chữ viết trong ngôn ngữ C bao gồm những ký tự, ký hiệu sau: (phân biệt chữ in hoa và in thường):
+
+   - 26 chữ cái latinh lớn A,B,C...Z
+   - 26 chữ cái latinh nhỏ a,b,c ...z.
+   - 10 chữ số thập phân 0,1,2...9.
+   - Các ký hiệu toán học: +, -, *, /, =, <, >, (, )
+   - Các ký hiệu đặc biệt: :. , ; " ' _ @ # $ ! ^ [ ] { } ...
+   - khoảng trắng (dấu cách) xuống hàng (\n), tab (\t)
+   
+   
+   
+CÂU B: Trình bày các kiểu dữ liệu cơ sở trong C. 
+
+  1) Kiểu số nguyên:
+  
+  - Kiểu số nguyên là kiểu dữ liệu dùng để lưu các giá trị nguyên hay còn gọi là kiểu đếm được.Kiểu số nguyên trong C được 
+  chia thành các kiểu dữ liệu con,mỗi kiểu có 1 miền giá trị khác nhau.
+  
+  - Kiểu số nguyên 8 bits: gồm có 2 kiểu sau:
+    + KIểu unsigned char: lưu các số nguyên dương từ 0 đến 255.
+    => Để khai báo một biến là kiểu ký tự thì ta khai báo biến kiểu (unsigned char).Mỗi số trong miền giá trị của kiểu 
+       (unsigned char) tương ứng với 1 ký tự trong bảng mã ASCII.
+       
+    + kiểu char: lưu các số nguyên từ -128 đến 127.Kiểu (char) sử dụng bit trái nhất để làm bit dấu   
+    => Nếu gắn giá trị > 127 cho biến kiểu (char) thì giá trị biến này có thể là số âm.
+   
+   - Kiểu số nguyên 16 bits: gồm có 4 kiểu sau:
+      + Kiểu enum (1), short int (2), int(3) : Lưu các số nguyên từ -32768 đến 32767. Sử dụng bit bên trái nhất để làm bit dấu.
+
+      => Nếu gán giá trị >32767 cho biến có 1 trong 3 kiểu trên thì giá trị của biến này có thể là số âm.
+
+      + Kiểu unsigned int(4): Kiểu unsigned int lưu các số nguyên dương từ 0 đến 65535.
+      
+   - Kiểu số nguyên 32 bits: gồm có 2 kiểu sau:
+   
+      + Kiểu long : Lưu các số nguyên từ -2147483658 đến 2147483647. Sử dụng bit bên trái nhất để làm bit dấu.
+
+      => Nếu gán giá trị >2147483647 cho biến có kiểu long thì giá trị của biến này có thể là số âm.
+
+      + Kiểu unsigned long: Kiểu unsigned long lưu các số nguyên dương từ 0 đến 4294967295
+   
+   2) Kiểu số thực: gồm có 3 kiểu sau:
+   
+      + float: kích thước	4 bytes,miền giá trị từ 3.4 * 10-38 đến 3.4 * 1038
+   
+      + ddouble: kích thước	8 bytes,miền giá trị từ 1.7 * 10-308 đến 1.7 * 10308
+
+      + long double: kích thước	10 bytes,miền giá trị từ 3.4 *10-4932 đến 1.1 *104932
+   
+   
+      Mỗi kiểu số thực ở trên đều có miền giá trị và độ chính xác (số số lẻ) khác nhau. Tùy vào nhu cầu sử dụng mà ta có thể khai báo biến thuộc 1 trong 3 kiểu trên.
+  
+   - Ngoài ra ta còn có kiểu dữ liệu (void), kiểu này mang ý nghĩa là kiểu rỗng không chứa giá trị gì cả.
+   
+   
+   
+ CÂU C : Trình bày khái niệm và cú pháp khai báo biến trong ngôn ngữ C  
+   
+  + Biến là một ô nhớ lưu trữ dữ liệu và có thể được thay đổi trong chương trình
+  + Cú pháp khai báo biến: 
+    +kiểu_dữ_liệu tên_biến
+    
+    
+    
+    
+Câu D:Trình bày khái niệm biến toàn cục và biến cục bộ trong ngôn ngữ C.
+
+  + Biến toàn cục được khai báo bên ngoài tất cả  các hàm kể cả hàm main và có thể được sử dụng tại mọi vị trí trong chương trình
+  + Biến cục bộ được khai báo trong một hàm, khối lệnh thì chỉ có thể được sử dụng trong hàm, khối lệnh đó
+  
+  
+  
+Câu E: Trình bày khái niệm và phân loại hàm trong ngôn ngữ C.
+
+  + Hàm là một khối lệnh thực hiện một nhiệm vụ cụ thể nào đó, 
+  + Có 2 loại hàm:
+    .Hàm với đối số là tham trị.
+    .Hàm với đối số là tham biến.
+    
+    
+    
+Câu F:Trình bày nguyên tắc hoạt động của Hàm trong ngôn ngữ C.
+
+  +Hàm được gọi trong hàm main
+  +khi được gọi luồng điều khiển sẽ chạy đến hàm đó và thực thi các lệnh trong hàm, nếu hàm có giá trị trả về khi kết thúc hàm sẽ trả về giá trị đó
+
+   Lưu ý:  - Hàm là một đơn vị độc lập của chương trình.
+           - Không cho phép xây dựng một hàm bên trong một hàm.
+   
+   
+   
+
+   
