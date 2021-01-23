@@ -22,7 +22,7 @@ int main() {
   else{
     x1 = (float) (- b + delta) / (2*a);
     x2 = (float) (- b - delta) / (2*a);
-    printf("x1 : %.1f\nx2 : %.1f",x1,x2);
+    printf("Phuong trinh co 2 nghiem phan biet:\nx1 : %.1f\nx2 : %.1f",x1,x2);
   }
 return 0;
 }
